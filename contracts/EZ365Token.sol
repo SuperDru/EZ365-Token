@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.11;
 
 import "./ERC20Detailed.sol";
 
@@ -51,19 +51,19 @@ contract EZ365Token is ERC20Detailed {
     }
     
     function transfer(address _to, uint256 _value)  public isTokenReleased returns (bool)  {
-        super.transfer(_to,_value);
+        return super.transfer(_to,_value);
     }
 
    function transferFrom(address _from, address _to, uint256 _value) public isTokenReleased returns (bool) {
-      super.transferFrom(_from, _to, _value);
+      return super.transferFrom(_from, _to, _value);
     }
 
 
    function increaseAllowance(address _spender, uint _addedValue) public isTokenReleased returns (bool) {
-      super.increaseAllowance(_spender, _addedValue);
+      return super.increaseAllowance(_spender, _addedValue);
     }
 
    function decreaseAllowance(address _spender, uint _subtractedValue) public isTokenReleased returns (bool) {
-     super.decreaseAllowance(_spender, _subtractedValue);
+     return super.decreaseAllowance(_spender, _subtractedValue);
     }
 }
