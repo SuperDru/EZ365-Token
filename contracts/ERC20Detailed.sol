@@ -9,8 +9,8 @@ import "./ERC20.sol";
  * just as on Ethereum all the operations are done in wei.
  */
 contract ERC20Detailed is ERC20 {
-    string constant private _name = "EZ365";
-    string constant private _symbol = "EZ365";
+    string constant private _name = "SOFTcoin";
+    string constant private _symbol = "SOFT";
     uint256 constant private _decimals = 18;
 
 

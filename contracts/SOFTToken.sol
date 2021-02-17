@@ -2,7 +2,7 @@ pragma solidity ^0.5.11;
 
 import "./ERC20Detailed.sol";
 
-contract EZ365Token is ERC20Detailed {
+contract SOFTToken is ERC20Detailed {
     
     uint256 public _releaseTime;
     constructor() public {

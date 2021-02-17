@@ -1,7 +1,7 @@
-var Token = artifacts.require("EZ365Token");
+var Token = artifacts.require("SOFTToken");
 
-var TokenName = "EZ365";
-var Symbol = "EZ365";
+var TokenName = "SOFTcoin";
+var Symbol = "SOFT";
 var TokenSupply = 200000000;
 var Decimals = 18;
 

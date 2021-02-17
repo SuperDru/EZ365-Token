@@ -1,9 +1,9 @@
-var EZToken = artifacts.require("EZ365Token");
+var SOFTToken = artifacts.require("SOFTToken");
 
 
 
 module.exports = function(deployer) {
-  deployer.deploy(EZToken)
+  deployer.deploy(SOFTToken)
   .then(instance =>{
     console.log(instance.address);
   });
